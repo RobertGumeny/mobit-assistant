@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Mobit Assistant",
+  "homepage_url": "http://localhost:8080/",
+  "description": "A helpful suite of tools to assist with using the MOBIT platform",
+  "default_locale": "en",
+  "permissions": ["https://*/", "http://*/*", "storage"],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "icons": {
+    "16": "icons/mobit_logo16.png",
+    "32": "icons/mobit_logo32.png",
+    "48": "icons/mobit_logo48.png",
+    "128": "icons/mobit_logo128.png"
+  },
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Mobit Assistant"
+  }
+}
